@@ -10,14 +10,14 @@ nmap <leader><leader> :
 "LeaderF Mappings
 noremap <leader>f :Leaderf --popup file<CR>
 noremap <leader>b :Leaderf --popup buffer<CR>
-noremap <leader>s :Leaderf --popup rg --recall<CR>
+noremap <leader>s :Leaderf --popup rg<CR>
 noremap <leader>* :<C-U><C-R>=printf("Leaderf! --popup rg -e %s ", expand("<cword>"))<CR>
 
 "Dispatch mapping
 " noremap <leader>g :Start tig status<CR>
 
 " NERDTree mapping
-noremap <leader>t :NERDTreeToggle<CR>
+noremap <leader>t :NERDTreeFind<CR>
 
 " Ranger mapping
 noremap <leader>r :Ranger<CR>
