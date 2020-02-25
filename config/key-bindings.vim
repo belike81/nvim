@@ -36,7 +36,7 @@ nnoremap<silent> <Tab> :bnext<CR>
 nnoremap<silent> <S-Tab> :bprevious<CR>
 
 noremap <leader>w :w<cr>
-noremap <leader>d :bd<cr>
+noremap <leader>k :bd<cr>
 noremap <leader>o :only<cr>
 
 " Clear search highlight after searching
