@@ -19,7 +19,9 @@ Plug 'dracula/vim', { 'as': 'dracula' } "Dracula theme for VIM
 
 " Functionality
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
-Plug 'Yggdroot/LeaderF' " fuzzy find files
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy searcher
+Plug 'junegunn/fzf.vim'
+Plug 'brooth/far.vim' " search and replace
 Plug 'christoomey/vim-tmux-navigator' " easy integration with tmux
 Plug 'francoiscabrol/ranger.vim' " nice ranger integration
 Plug 'mhinz/vim-signify' " Show change status from VSC
@@ -28,6 +30,7 @@ Plug 'tpope/vim-rails' " syntax highlighting and other usefull rails things
 Plug 'tpope/vim-dispatch' " asynchronousely dispatch commands
 Plug 'tpope/vim-endwise' " autoclose ruby syntax
 Plug 'tpope/vim-surround' " deal with surround actions
+Plug 'tpope/vim-fugitive' " handle git from vim
 Plug 'AndrewRadev/tagalong.vim' " automatically rename the closing tag
 Plug 'norcalli/nvim-colorizer.lua' " neovim color highlighter
 Plug 'liuchengxu/vista.vim' " view and search symbols and tags
@@ -112,6 +115,7 @@ let g:coc_global_extensions = [
   \ 'coc-sh',
   \ 'coc-vimlsp',
   \ 'coc-solargraph',
+  \ 'coc-tabnine',
   \ 'coc-prettier',
   \ 'coc-json',
   \ 'coc-angular'

@@ -25,7 +25,9 @@ set encoding=utf-8
 set number relativenumber
 
 " enable 256 color support with neovim
-set termguicolors
+if has('termguicolors')
+  set termguicolors
+endif
 
 " autocompletion
 set wildmode=longest,list,full

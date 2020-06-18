@@ -8,10 +8,9 @@ let maplocalleader = " "
 nmap <leader><leader> :
 
 "LeaderF Mappings
-noremap <leader>f :Leaderf --popup file<CR>
-noremap <leader>b :Leaderf --popup buffer<CR>
-noremap <leader>s :Leaderf --popup rg<CR>
-noremap <leader>* :<C-U><C-R>=printf("Leaderf! --popup rg -e %s ", expand("<cword>"))<CR>
+noremap <leader>f :FZF!<CR>
+noremap <leader>s :Rg!
+noremap <leader>* :<C-U><C-R>=printf("Rg! %s", expand("<cword>"))<CR>
 
 "Dispatch mapping
 " noremap <leader>g :Start tig status<CR>
