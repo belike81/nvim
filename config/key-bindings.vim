@@ -2,50 +2,25 @@
 "################## KEY BINDINGS ###################
 "###################################################
 
-let mapleader = ";"
-let maplocalleader = ";"
+let mapleader = " "
+nnoremap <Space> <Nop>
 
-nmap <leader><leader> :
+" resize window with alt
+nnoremap <silent> <M-j>    :resize -2<CR>
+nnoremap <silent> <M-k>    :resize +2<CR>
+nnoremap <silent> <M-h>    :vertical resize -2<CR>
+nnoremap <silent> <M-l>    :vertical resize +2<CR>
 
-"LeaderF Mappings
-noremap <leader>f :FZF!<CR>
-noremap <leader>s :Rg!
-noremap <leader>* :<C-U><C-R>=printf("Rg! %s", expand("<cword>"))<CR>
-
-"Dispatch mapping
-" noremap <leader>g :Start tig status<CR>
-
-" NERDTree mapping
-noremap <leader>t :NERDTreeFind<CR>
-
-" Ranger mapping
-noremap <leader>r :FloatermNew ranger<CR>
-
-" Lazydocker
-" nnoremap <silent> <Leader>d :call ToggleLazyDocker()<CR>
-noremap <leader>d :FloatermNew lazydocker<CR>
-
-" Lazygit
-" nnoremap <silent> <Leader>g :call ToggleLazyGit()<CR>
-noremap <leader>g :FloatermNew lazygit<CR>
-
-" Coc
-noremap <leader>l :CocList<CR>
+" Better nav for omnicomplete
+inoremap <expr> <C-j> ("\<C-n>")
+inoremap <expr> <C-k> ("\<C-p>")
 
 " Next/previous buffer
 noremap<silent> <C-[> :bnext<CR>
 noremap<silent> <C-]> :bprevious<CR>
-noremap<silent> <leader>b :Buffers<CR>
-
-
-noremap <leader>w :w<cr>
-noremap <leader>k :bd<cr>
-noremap <leader>o :only<cr>
 
 " Clear search highlight after searching
 nnoremap<silent> <cr> :noh<cr><cr>
-
-noremap <leader><TAB> :e#<cr>
 
 " Reselect text ater indent/unindent.
 vnoremap < <gv
@@ -78,8 +53,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 
 " Keys for formatting selection with coc-prettier
-vmap <leader>p  <Plug>(coc-format-selected)
-nmap <leader>p  <Plug>(coc-format-selected)
+vmap gp  <Plug>(coc-format-selected)
+nmap gp  <Plug>(coc-format-selected)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>

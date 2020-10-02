@@ -85,7 +85,7 @@ xnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 
 nnoremap gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
 
-nnoremap <silent> <C-t> :call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
+nnoremap <silent> ` :call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
 
 " Bind C-/ to vscode commentary since calling from vscode produces double comments due to multiple cursors
 xnoremap <expr> <C-/> <SID>vscodeCommentary()

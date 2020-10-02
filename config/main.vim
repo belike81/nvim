@@ -36,10 +36,11 @@ set wildmode=longest,list,full
 set splitbelow splitright
 
 " use system clipboard
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 " From Coc Readme
 set updatetime=300
+set timeoutlen=100
 
 " some servers have issues with backup files, see #649
 set nobackup
@@ -61,6 +62,12 @@ set autoread
 set ignorecase
 set smartcase
 
+" treat dash separated words as word objects
+set iskeyword+=-
+
+" stop new line continuation as comments
+set formatoptions-=cro
+
 " enable mouse scroll
 set mouse=a
 
@@ -70,6 +77,9 @@ set hidden
 " statusline Config
 set statusline+=%F
 set cmdheight=1
+
+" highlight current line
+set cursorline
 
 " matching braces/tags
 set showmatch
