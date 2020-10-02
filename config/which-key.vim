@@ -78,7 +78,7 @@ let g:which_key_map.b = {
       \ 'l' : ['blast'     , 'last-buffer'],
       \ 'n' : ['bnext'     , 'next-buffer'],
       \ 'p' : ['bprevious' , 'previous-buffer'],
-      \ '?' : ['Buffers'   , 'fzf-buffer'],
+      \ 'b' : ['Buffers'   , 'fzf-buffer'],
       \ }
 
 " f is for find and replace
