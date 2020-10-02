@@ -2,8 +2,8 @@
 "################## KEY BINDINGS ###################
 "###################################################
 
-let mapleader = " "
-let maplocalleader = " "
+let mapleader = ";"
+let maplocalleader = ";"
 
 nmap <leader><leader> :
 
@@ -19,20 +19,24 @@ noremap <leader>* :<C-U><C-R>=printf("Rg! %s", expand("<cword>"))<CR>
 noremap <leader>t :NERDTreeFind<CR>
 
 " Ranger mapping
-noremap <leader>r :Ranger<CR>
-
-" Vista mapping
-noremap <leader>v :Vista<CR>
+noremap <leader>r :FloatermNew ranger<CR>
 
 " Lazydocker
-nnoremap <silent> <Leader>d :call ToggleLazyDocker()<CR>
+" nnoremap <silent> <Leader>d :call ToggleLazyDocker()<CR>
+noremap <leader>d :FloatermNew lazydocker<CR>
 
 " Lazygit
-nnoremap <silent> <Leader>g :call ToggleLazyGit()<CR>
+" nnoremap <silent> <Leader>g :call ToggleLazyGit()<CR>
+noremap <leader>g :FloatermNew lazygit<CR>
+
+" Coc
+noremap <leader>l :CocList<CR>
 
 " Next/previous buffer
-nnoremap<silent> <Tab> :bnext<CR>
-nnoremap<silent> <S-Tab> :bprevious<CR>
+noremap<silent> <C-[> :bnext<CR>
+noremap<silent> <C-]> :bprevious<CR>
+noremap<silent> <leader>b :Buffers<CR>
+
 
 noremap <leader>w :w<cr>
 noremap <leader>k :bd<cr>

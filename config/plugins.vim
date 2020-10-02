@@ -23,7 +23,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy searcher
 Plug 'junegunn/fzf.vim'
 Plug 'brooth/far.vim' " search and replace
 Plug 'christoomey/vim-tmux-navigator' " easy integration with tmux
-Plug 'francoiscabrol/ranger.vim' " nice ranger integration
 Plug 'mhinz/vim-signify' " Show change status from VSC
 Plug 'tpope/vim-commentary' " easyliy comment and uncomment code
 Plug 'tpope/vim-rails' " syntax highlighting and other usefull rails things
@@ -33,11 +32,11 @@ Plug 'tpope/vim-surround' " deal with surround actions
 Plug 'tpope/vim-fugitive' " handle git from vim
 Plug 'AndrewRadev/tagalong.vim' " automatically rename the closing tag
 Plug 'norcalli/nvim-colorizer.lua' " neovim color highlighter
-Plug 'liuchengxu/vista.vim' " view and search symbols and tags
+Plug 'voldikss/vim-floaterm' " a floating vim terminal
 
 " Nerd Tree plugins
 Plug 'scrooloose/nerdtree'
-Plug 'tsony-tsonev/nerdtree-git-plugin'
+"Plug 'tsony-tsonev/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 
@@ -118,7 +117,8 @@ let g:coc_global_extensions = [
   \ 'coc-tabnine',
   \ 'coc-prettier',
   \ 'coc-json',
-  \ 'coc-angular'
+  \ 'coc-angular',
+  \ 'coc-floaterm'
   \ ]
 
 " -------Vista----------
@@ -157,7 +157,7 @@ let g:airline_symbols.modified = ' '
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
 let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 "extensions
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#coc#enabled = 1
 let g:airline#extensions#unicode#enabled = 1
