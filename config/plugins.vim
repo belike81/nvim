@@ -77,3 +77,6 @@ source $HOME/.config/nvim/config/plugins/floatterm.vim
 
 " -------RNVIMR----------
 source $HOME/.config/nvim/config/plugins/rnvimr.vim
+
+" -------XTabLine----------
+source $HOME/.config/nvim/config/plugins/xtabline.vim
