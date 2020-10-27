@@ -83,3 +83,6 @@ source $HOME/.config/nvim/config/plugins/xtabline.vim
 
 " -------Window swap----------
 source $HOME/.config/nvim/config/plugins/windowswap.vim
+
+" ------Git messenger----------
+source $HOME/.config/nvim/config/plugins/gitmessenger.vim
