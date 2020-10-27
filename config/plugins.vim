@@ -80,3 +80,6 @@ source $HOME/.config/nvim/config/plugins/rnvimr.vim
 
 " -------XTabLine----------
 source $HOME/.config/nvim/config/plugins/xtabline.vim
+
+" -------Window swap----------
+source $HOME/.config/nvim/config/plugins/windowswap.vim
