@@ -46,6 +46,7 @@ Plug 'norcalli/nvim-colorizer.lua' " neovim color highlighter
 Plug 'voldikss/vim-floaterm' " a floating vim terminal
 Plug 'moll/vim-bbye' " delete the buffer not the window
 Plug 'wesQ3/vim-windowswap' "easily move windows and swap them
+Plug 'kevinhwang91/rnvimr' "use ranger inside vim
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot' " Bundled syntax highlighting for many languages. Lazy loaded.
