@@ -98,3 +98,6 @@ source $HOME/.config/nvim/config/plugins/gitmessenger.vim
 
 " ------Fat----------
 source $HOME/.config/nvim/config/plugins/far.vim
+
+" ------VIM Fugitive----------
+source $HOME/.config/nvim/config/plugins/fugitive.vim
