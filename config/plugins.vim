@@ -95,8 +95,7 @@ source $HOME/.config/nvim/config/plugins/windowswap.vim
 " ------Git messenger----------
 source $HOME/.config/nvim/config/plugins/gitmessenger.vim
 
-
-" ------Fat----------
+" ------Far----------
 source $HOME/.config/nvim/config/plugins/far.vim
 
 " ------VIM Fugitive----------
