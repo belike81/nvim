@@ -15,6 +15,8 @@ call plug#begin('~/local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline' " stylish status bar and more
 Plug 'vim-airline/vim-airline-themes' " themes for airline status bar
 Plug 'dracula/vim', { 'as': 'dracula' } "Dracula theme for VIM
+Plug 'christianchiarulli/nvcode-color-schemes.vim' "three colorschemes (nvcode, onedark, nord) converted to treesitter
+Plug 'nvim-treesitter/nvim-treesitter' "Color abstraction layer for neovim
 Plug 'ryanoasis/vim-devicons' " cool icons in vim
 Plug 'mg979/vim-xtabline' " better looking tabline
 Plug 'psliwka/vim-smoothie' " smooth scrolling in vim
@@ -71,6 +73,9 @@ source $HOME/.config/nvim/config/plugins/vista.vim
 
 " -------Airline----------
 source $HOME/.config/nvim/config/plugins/airline.vim
+
+" ------Treesitter------
+luafile $HOME/.config/nvim/config/plugins/treesitter.lua
 
 " -------Devicons----------
 source $HOME/.config/nvim/config/plugins/devicons.vim

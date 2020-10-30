@@ -6,7 +6,7 @@
 syntax on
 "
 " set colorscheme
-colorscheme dracula
+colorscheme nvcode
 
 " tab Settings
 set expandtab
@@ -27,6 +27,7 @@ set number relativenumber
 " enable 256 color support with neovim
 if has('termguicolors')
   set termguicolors
+  hi LineNr ctermbg=NONE guibg=NONE
 endif
 
 " autocompletion
