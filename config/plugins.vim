@@ -63,6 +63,9 @@ source $HOME/.config/nvim/config/plugins/coc.vim
 " -------FZF----------
 source $HOME/.config/nvim/config/plugins/fzf.vim
 
+" ------Which-Key----------
+source $HOME/.config/nvim/config/plugins/which-key.vim
+
 " -------Vista----------
 source $HOME/.config/nvim/config/plugins/vista.vim
 

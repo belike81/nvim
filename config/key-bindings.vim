@@ -15,10 +15,6 @@ nnoremap <silent> <M-l>    :vertical resize +2<CR>
 inoremap <expr> <C-j> ("\<C-n>")
 inoremap <expr> <C-k> ("\<C-p>")
 
-" Next/previous buffer
-noremap<silent> <C-[> :bnext<CR>
-noremap<silent> <C-]> :bprevious<CR>
-
 " Clear search highlight after searching
 nnoremap<silent> <cr> :noh<cr><cr>
 
