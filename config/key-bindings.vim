@@ -71,3 +71,6 @@ nnoremap W :w<CR>
 
 " Alias write and quit to Q
 nnoremap Q :wq<CR>
+
+" Record mapping remap since I don't use that feature
+nnoremap q <Nop>
