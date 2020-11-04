@@ -26,6 +26,16 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
+let g:which_key_map['1'] = [ ':BufferGoto 1'                      , 'buffer 1' ]
+let g:which_key_map['2'] = [ ':BufferGoto 2'                      , 'buffer 2' ]
+let g:which_key_map['3'] = [ ':BufferGoto 3'                      , 'buffer 3' ]
+let g:which_key_map['4'] = [ ':BufferGoto 4'                      , 'buffer 4' ]
+let g:which_key_map['5'] = [ ':BufferGoto 5'                      , 'buffer 5' ]
+let g:which_key_map['6'] = [ ':BufferGoto 6'                      , 'buffer 6' ]
+let g:which_key_map['7'] = [ ':BufferGoto 7'                      , 'buffer 7' ]
+let g:which_key_map['8'] = [ ':BufferGoto 8'                      , 'buffer 8' ]
+let g:which_key_map['9'] = [ ':BufferGoto 9'                      , 'buffer 9' ]
+let g:which_key_map['`'] = [ ':BufferPick'                        , 'buffer pick' ]
 let g:which_key_map['/'] = [ ':call Comment()'                    , 'comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                        , 'open init' ]
 let g:which_key_map[';'] = [ ':Commands'                          , 'commands' ]

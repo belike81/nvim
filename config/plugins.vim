@@ -17,10 +17,8 @@ Plug 'vim-airline/vim-airline-themes' " themes for airline status bar
 Plug 'dracula/vim', { 'as': 'dracula' } "Dracula theme for VIM
 Plug 'christianchiarulli/nvcode-color-schemes.vim' "three colorschemes (nvcode, onedark, nord) converted to treesitter
 Plug 'nvim-treesitter/nvim-treesitter' "Color abstraction layer for neovim
-Plug 'ryanoasis/vim-devicons' " cool icons in vim
-Plug 'mg979/vim-xtabline' " better looking tabline
-Plug 'psliwka/vim-smoothie' " smooth scrolling in vim
-
+Plug 'kyazdani42/nvim-web-devicons' " cool icons in vim
+Plug 'romgrk/barbar.nvim' " fancy tabbar
 
 " Functionality
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
@@ -100,3 +98,6 @@ source $HOME/.config/nvim/config/plugins/far.vim
 
 " ------VIM Fugitive----------
 source $HOME/.config/nvim/config/plugins/fugitive.vim
+
+" ------Barbar----------
+source $HOME/.config/nvim/config/plugins/barbar.vim
